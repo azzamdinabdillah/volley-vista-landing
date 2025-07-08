@@ -379,8 +379,8 @@ function optimizePerformance() {
     let ticking = false;
     
     function updateOnScroll() {
-        updateParallax();
-        updateNavigation();
+        // updateParallax(); // Parallax is handled in initParallax
+        // updateNavigation(); // Navigation is handled in initNavigation
         ticking = false;
     }
     
