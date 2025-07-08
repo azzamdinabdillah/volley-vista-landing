@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Volleyball Icon -->
+  <symbol id="volleyball" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 2c-1.1 0-2.16.18-3.15.5" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M9.5 3.8C8.2 4.9 7.2 6.4 6.7 8.1" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M6.5 11.5c0 1.1.2 2.1.5 3" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M8.1 17.3c1.1 1.3 2.6 2.3 4.4 2.7" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M15 20.2c1.8-.4 3.3-1.4 4.4-2.7" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M17.5 14.5c.3-.9.5-1.9.5-3" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M17.3 8.1c-.5-1.7-1.5-3.2-2.8-4.3" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M12 2c1.1 0 2.16.18 3.15.5" stroke="currentColor" stroke-width="2" fill="none"/>
+  </symbol>
+  
+  <!-- Trophy Icon -->
+  <symbol id="trophy" viewBox="0 0 24 24">
+    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M6 9a6 6 0 0 0 12 0" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M9 22h6" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 15v7" stroke="currentColor" stroke-width="2"/>
+    <path d="M14 15v7" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Team Icon -->
+  <symbol id="team" viewBox="0 0 24 24">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Training Icon -->
+  <symbol id="training" viewBox="0 0 24 24">
+    <path d="M7 21h10" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 21v-8" stroke="currentColor" stroke-width="2"/>
+    <path d="M4 13h16" stroke="currentColor" stroke-width="2"/>
+    <path d="M3 3h18l-2 10H5L3 3z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Star Icon -->
+  <symbol id="star" viewBox="0 0 24 24">
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" 
+             fill="currentColor" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Award Icon -->
+  <symbol id="award" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Lightning Icon -->
+  <symbol id="lightning" viewBox="0 0 24 24">
+    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Fire Icon -->
+  <symbol id="fire" viewBox="0 0 24 24">
+    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" 
+          fill="currentColor"/>
+  </symbol>
+  
+  <!-- Shield Icon -->
+  <symbol id="shield" viewBox="0 0 24 24">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Target Icon -->
+  <symbol id="target" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  
+  <!-- Medal Icon -->
+  <symbol id="medal" viewBox="0 0 24 24">
+    <circle cx="12" cy="15" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+    <polyline points="8.5,8.5 12,2 15.5,8.5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="15" r="3" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Crown Icon -->
+  <symbol id="crown" viewBox="0 0 24 24">
+    <path d="M2 20h20l-2-6-6 4-4-4-6-4-2 6z" fill="currentColor"/>
+    <circle cx="6" cy="10" r="2" fill="currentColor"/>
+    <circle cx="18" cy="10" r="2" fill="currentColor"/>
+    <circle cx="12" cy="6" r="2" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Whistle Icon -->
+  <symbol id="whistle" viewBox="0 0 24 24">
+    <circle cx="9" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M17 12h3l-1-3 1-3h-3" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="9" cy="12" r="2" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Court Icon -->
+  <symbol id="court" viewBox="0 0 24 24">
+    <rect x="2" y="6" width="20" height="12" fill="none" stroke="currentColor" stroke-width="2" rx="2"/>
+    <line x1="12" y1="6" x2="12" y2="18" stroke="currentColor" stroke-width="2"/>
+    <circle cx="6" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+    <circle cx="18" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+</svg>

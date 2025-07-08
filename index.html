@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Volleyball Team - Champions Rise Together</title>
+    <meta name="description" content="Elite volleyball team competing at international level. Join our championship journey and experience volleyball excellence.">
+    <meta name="keywords" content="volleyball, team, championship, sports, training, competition">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Thunder Volleyball Team - Champions Rise Together">
+    <meta property="og:description" content="Elite volleyball team competing at international level">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/src/assets/icons.svg#volleyball">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            .font-heading {
+                font-family: 'Poppins', sans-serif;
+            }
+            .font-accent {
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        
+        @layer utilities {
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            }
+            .bg-gradient-hero {
+                background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.6));
+            }
+            .text-gradient {
+                background: linear-gradient(135deg, #f97316, #fb923c);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M8 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-blue-900">Thunder VB</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">About</a>
+                    <a href="#players" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">Players</a>
+                    <a href="#achievements" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">Achievements</a>
+                    <a href="#schedule" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">Schedule</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-900 transition-colors">Contact</a>
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+                        Join Us
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white border-t border-gray-200 hidden" id="mobile-menu">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-blue-900">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-blue-900">About</a>
+                <a href="#players" class="block text-gray-700 hover:text-blue-900">Players</a>
+                <a href="#achievements" class="block text-gray-700 hover:text-blue-900">Achievements</a>
+                <a href="#schedule" class="block text-gray-700 hover:text-blue-900">Schedule</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-900">Contact</a>
+                <button class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+                    Join Us
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Parallax -->
+        <div class="absolute inset-0 parallax-bg">
+            <img src="https://pixabay.com/get/g59187394f200d6264ae227e7e7900618e07b66bff29183fd222ff41aacd4aee33a2be0460ed53f123ca384676035c584531c3350e1653ecdce2554fe9c5d67a0_1280.jpg" 
+                 alt="Volleyball team in action" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-hero"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <h1 class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl mb-6 animate-fade-in-up">
+                Champions Rise <span class="text-gradient">Together</span>
+            </h1>
+            <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-300">
+                Elite volleyball excellence meets international competitive spirit. Join our championship journey.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up delay-500">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                    Meet Our Team
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                    Join Us
+                </button>
+            </div>
+            
+            <!-- Statistics Counter -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 animate-fade-in-up delay-700">
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2 counter" data-target="156">0</div>
+                    <div class="text-sm sm:text-base opacity-90">Games Won</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2 counter" data-target="23">0</div>
+                    <div class="text-sm sm:text-base opacity-90">Championships</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2 counter" data-target="12">0</div>
+                    <div class="text-sm sm:text-base opacity-90">Years Active</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl sm:text-4xl font-bold mb-2 counter" data-target="89">0</div>
+                    <div class="text-sm sm:text-base opacity-90">Win Rate %</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-8 h-8 text-white"></i>
+        </div>
+    </section>
+
+    <!-- About Team Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="space-y-6">
+                    <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                        Excellence in <span class="text-gradient">Motion</span>
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Founded in 2012, Thunder Volleyball has emerged as one of the premier volleyball teams in international competition. Our commitment to excellence, teamwork, and athletic development has earned us recognition across the globe.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We believe in fostering not just exceptional athletes, but well-rounded individuals who embody the spirit of competition and camaraderie both on and off the court.
+                    </p>
+                    
+                    <!-- Timeline -->
+                    <div class="space-y-4 mt-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                            <div>
+                                <span class="font-semibold text-blue-900">2012</span> - Team Founded
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                            <div>
+                                <span class="font-semibold text-blue-900">2015</span> - First National Championship
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                            <div>
+                                <span class="font-semibold text-blue-900">2019</span> - International Tournament Victory
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                            <div>
+                                <span class="font-semibold text-blue-900">2024</span> - Global Champions League Winners
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Photo -->
+                <div class="relative">
+                    <img src="https://pixabay.com/get/g33501670ffbc505de0e901b76d8bc3fadbb3915d5360d0ea9f0bf5259f718d58f4a37f1d2bf5773112d7bc1b903b9506706d95e96533012669b5bfbffc8671e6_1280.jpg" 
+                         alt="Thunder Volleyball Team" 
+                         class="rounded-lg shadow-2xl w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+            
+            <!-- Coach Section -->
+            <div class="mt-16 bg-white rounded-xl shadow-lg p-8">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-1">
+                        <img src="https://pixabay.com/get/g27fd62895c14efc540b537d39095a632fd61d22afb4318c13fbbb29c912523c3061c1affe21a09403dcaa1e9129e636dd9e7c609aedffd0ae78502666585d072_1280.jpg" 
+                             alt="Head Coach" 
+                             class="w-48 h-48 rounded-full object-cover mx-auto shadow-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="font-heading font-bold text-2xl text-blue-900 mb-4">Meet Our Head Coach</h3>
+                        <p class="text-gray-700 mb-4">
+                            With over 15 years of coaching experience and a former Olympic player, Coach Sarah Johnson brings world-class expertise to our team. Her innovative training methods and leadership philosophy have been instrumental in our championship success.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm">Olympic Medalist</span>
+                            <span class="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm">15+ Years Experience</span>
+                            <span class="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm">Championship Coach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Showcase -->
+    <section id="players" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    Our <span class="text-gradient">Champions</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Meet the exceptional athletes who make Thunder Volleyball a force to be reckoned with on the international stage.
+                </p>
+            </div>
+            
+            <!-- Player Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Player 1 - Captain -->
+                <div class="player-card bg-gradient-to-br from-blue-50 to-orange-50 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 border-2 border-orange-200">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/g10c8a0593ba546d1edc02f42cb8f312fed801f2f2dc38b73727f94b06a891b59fbc7c23dd92feba8ad2dbb54abe5cd86883028d9162090c48c78dc08ceb0f1f4_1280.jpg" 
+                             alt="Team Captain" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Captain
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Alexandra Chen</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Outside Hitter</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Spikes:</span>
+                                <span class="font-semibold ml-1">847</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Blocks:</span>
+                                <span class="font-semibold ml-1">234</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">156</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">8</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Olympic qualifier with exceptional leadership skills and powerful attacking game.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="twitter" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="linkedin" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player 2 -->
+                <div class="player-card bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/g7a6a0ab9850e29480d6be050ebdf48b5cf06090e6be20dfc6ba5f5e655281f5c256b12e375a053a8706eb1aa1d9bacf248f65e1466a424a974678007ce06badd_1280.jpg" 
+                             alt="Player 2" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Maria Rodriguez</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Setter</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Assists:</span>
+                                <span class="font-semibold ml-1">1,234</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">89</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Digs:</span>
+                                <span class="font-semibold ml-1">567</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">5</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Precision setter with exceptional court vision and tactical intelligence.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="twitter" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player 3 -->
+                <div class="player-card bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/ge37d50a37808b8cf208d02d80c8b50cff5effb823edbe0755b22a01f5e3f0c5bcba47dd157ce8b67afa2d32d6fcbb23ae0320e61f242a50749eba0a746953394_1280.jpg" 
+                             alt="Player 3" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Emma Thompson</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Middle Blocker</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Blocks:</span>
+                                <span class="font-semibold ml-1">456</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Spikes:</span>
+                                <span class="font-semibold ml-1">678</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">123</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">6</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Dominant presence at the net with exceptional blocking and attacking skills.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="facebook" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player 4 -->
+                <div class="player-card bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/g1f99ff470eb93ca0235ce69ac7f5118cb48d996657f6dafe4606be39cb7acc4e931e93610b7d4821ad581cf7b4438dda897398c4cebd9d72f75acacb7fb654f7_1280.jpg" 
+                             alt="Player 4" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Sofia Petrov</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Libero</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Digs:</span>
+                                <span class="font-semibold ml-1">1,567</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Passes:</span>
+                                <span class="font-semibold ml-1">2,234</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">67</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">7</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Defensive specialist with incredible reflexes and consistent passing accuracy.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="twitter" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player 5 -->
+                <div class="player-card bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/g9b8f6163e5de786d8ed158d3cc36603b2f7ebd3f3190e46d33ca5fcef79ddea9991a982b16c72d1eec7bef1c680ee255faf30020aed742aa629a0b1b495a045a_1280.jpg" 
+                             alt="Player 5" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Yuki Tanaka</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Opposite Hitter</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Spikes:</span>
+                                <span class="font-semibold ml-1">723</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Blocks:</span>
+                                <span class="font-semibold ml-1">189</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">145</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">4</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Powerful attacker with excellent technical skills and clutch performance ability.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="linkedin" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player 6 -->
+                <div class="player-card bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://pixabay.com/get/g27e5ebb836bd0680f1ab122fa24cf56d4cb342e314219d7113876975f134c52d53218f061defeb25ab71d7e7ff31a4a146a9fba3112723439634d21151892d69_1280.jpg" 
+                             alt="Player 6" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-2">Lisa Wagner</h3>
+                        <p class="text-orange-600 font-semibold mb-3">Outside Hitter</p>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                            <div>
+                                <span class="text-gray-600">Spikes:</span>
+                                <span class="font-semibold ml-1">634</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Digs:</span>
+                                <span class="font-semibold ml-1">345</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Aces:</span>
+                                <span class="font-semibold ml-1">98</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-600">Years:</span>
+                                <span class="font-semibold ml-1">3</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Versatile attacker with strong defensive skills and team-first mentality.
+                        </p>
+                        <div class="flex space-x-3">
+                            <i data-feather="instagram" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                            <i data-feather="twitter" class="w-5 h-5 text-gray-400 hover:text-orange-500 cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Trophies -->
+    <section id="achievements" class="py-20 bg-gradient-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl mb-6">
+                    Our <span class="text-orange-300">Legacy</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto opacity-90">
+                    A testament to excellence, dedication, and the relentless pursuit of volleyball greatness.
+                </p>
+            </div>
+            
+            <!-- Trophies Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <img src="https://pixabay.com/get/gbbb0d516dd85461742165edd6cf620df9ae7f420232f0dee7f4ba724450681238bcac6302bffe904786d968a26ae28f689901457810dadd7da2190e0bcede6a1_1280.jpg" 
+                         alt="Championship Trophy" 
+                         class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-lg mb-2">Global Champions</h3>
+                    <p class="text-orange-200 text-sm">2024 World Championship</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <img src="https://pixabay.com/get/g79c95b8a618422d6ee546301e5d1bbf3b1f2a7171bcef2186901f036790288bafd0bdb5d7f7e74742b8cdaa95f13607fc9ca0dde5d3a4001a2b9c44cab544b53_1280.jpg" 
+                         alt="National Trophy" 
+                         class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-lg mb-2">National Champions</h3>
+                    <p class="text-orange-200 text-sm">2023 National League</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <img src="https://pixabay.com/get/g5b51e9cbf63ff67b4ad649a6c21bd6ed873d74189093256712ed1f8fa73a54d072268493125c4ddef3a7dbdd5e9d7358767f171e336796b759ccc22297d48a51_1280.jpg" 
+                         alt="Regional Trophy" 
+                         class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-lg mb-2">Regional Winners</h3>
+                    <p class="text-orange-200 text-sm">2022 Regional Cup</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white/10 rounded-xl backdrop-blur-sm">
+                    <img src="https://pixabay.com/get/gdaa088cf92a3a8725b2fb236bb1f2ab4e90d00cebe51c01b0466aac53297c4cdc664347ceb1ae4921c4bd45280cb8b631c044073f7a562f852aeb07055da491c_1280.jpg" 
+                         alt="Youth Championship" 
+                         class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover">
+                    <h3 class="font-bold text-lg mb-2">Youth Excellence</h3>
+                    <p class="text-orange-200 text-sm">Development Program Award</p>
+                </div>
+            </div>
+            
+            <!-- Achievement Timeline -->
+            <div class="max-w-4xl mx-auto">
+                <h3 class="font-heading font-bold text-2xl text-center mb-8">Championship Timeline</h3>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center font-bold text-lg">
+                            2024
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">World Championship Victory</h4>
+                            <p class="text-orange-200">Defeated international teams to claim global title</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center font-bold text-lg">
+                            2023
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">National League Champions</h4>
+                            <p class="text-orange-200">Undefeated season with 24-0 record</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center font-bold text-lg">
+                            2022
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Regional Championship</h4>
+                            <p class="text-orange-200">Three consecutive regional titles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Facilities -->
+    <section id="training" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    World-Class <span class="text-gradient">Facilities</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    State-of-the-art training facilities and cutting-edge equipment to develop champions.
+                </p>
+            </div>
+            
+            <!-- Facilities Gallery -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://pixabay.com/get/g1b8546a8d6a8d83b4ea5f924f33f81b1102bd110e43b50641eba2dd9eebd259b3c082410ec2481a3e07d4ce2f38723ca8f9e8da517f69302b30125f7581efd82_1280.jpg" 
+                         alt="Training Court" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-semibold">Main Court</h3>
+                            <p class="text-sm opacity-90">Professional-grade surface</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://pixabay.com/get/g07a23fdd459fe7d72b9ee84fa2e95a950c9771b9ba39abf1ca91bc70f4c007f119dea7e0494fab08094ddf87c3a4c9ef83cc60cb41a93b1f065dc5d555eeffb0_1280.jpg" 
+                         alt="Weight Room" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-semibold">Fitness Center</h3>
+                            <p class="text-sm opacity-90">Complete strength training</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://pixabay.com/get/g2dd2fd8ab26ab050d33d914477c8f0a085396e53bd7a2bdfd6dcb2dfbdca7eee781c7e344b197bb3f89edac47d815ae1a2ed5943f636f955bc8f7c0ac562b038_1280.jpg" 
+                         alt="Recovery Room" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-semibold">Recovery Suite</h3>
+                            <p class="text-sm opacity-90">Sports medicine & therapy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://pixabay.com/get/g44f411149c3acd915d29bba887e55d9a22bb471155003c63e955c3d17da4c6cfc5b3efc31a010bf7829d521f0eefc0699e67dc33e019add1f855eafc3e13a1c2_1280.jpg" 
+                         alt="Team Lounge" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end">
+                        <div class="p-4 text-white">
+                            <h3 class="font-semibold">Team Lounge</h3>
+                            <p class="text-sm opacity-90">Strategy & relaxation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Training Philosophy -->
+            <div class="bg-gray-50 rounded-xl p-8">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-heading font-bold text-2xl text-blue-900 mb-4">Our Training Philosophy</h3>
+                        <p class="text-gray-700 mb-6">
+                            We believe in holistic development that combines technical excellence, physical conditioning, mental strength, and team chemistry. Our systematic approach ensures every player reaches their maximum potential.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <i data-feather="target" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="font-semibold">Precision Skills Training</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <i data-feather="zap" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="font-semibold">Athletic Performance</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <i data-feather="brain" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="font-semibold">Mental Conditioning</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                    <i data-feather="users" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="font-semibold">Team Chemistry</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-lg">
+                        <h4 class="font-semibold text-lg text-blue-900 mb-4">Training Schedule</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monday - Wednesday</span>
+                                <span class="font-semibold">Technical Skills</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Tuesday - Thursday</span>
+                                <span class="font-semibold">Strength Training</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Wednesday - Friday</span>
+                                <span class="font-semibold">Team Practice</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Friday</span>
+                                <span class="font-semibold">Match Simulation</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-semibold">Recovery & Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Schedule & Results -->
+    <section id="schedule" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    <span class="text-gradient">Schedule</span> & Results
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Follow our championship journey through the season's most important matches.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Upcoming Matches -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="font-heading font-bold text-2xl text-blue-900 mb-6 flex items-center">
+                        <i data-feather="calendar" class="w-6 h-6 mr-2 text-orange-500"></i>
+                        Upcoming Matches
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Lightning Bolts</div>
+                                <div class="text-sm text-gray-600">July 15, 2025</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">Thunder Arena • 7:00 PM</div>
+                                <button class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs hover:bg-orange-600">
+                                    Get Tickets
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Storm Warriors</div>
+                                <div class="text-sm text-gray-600">July 22, 2025</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">Away • 6:30 PM</div>
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs hover:bg-blue-600">
+                                    Live Stream
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Fire Eagles</div>
+                                <div class="text-sm text-gray-600">July 29, 2025</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">Thunder Arena • 7:30 PM</div>
+                                <button class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs hover:bg-orange-600">
+                                    Get Tickets
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Results -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="font-heading font-bold text-2xl text-blue-900 mb-6 flex items-center">
+                        <i data-feather="award" class="w-6 h-6 mr-2 text-green-500"></i>
+                        Recent Results
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="border border-gray-200 rounded-lg p-4 bg-green-50">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Silver Sharks</div>
+                                <div class="text-sm text-green-600 font-semibold">WIN</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">3-1 (25-18, 23-25, 25-20, 25-16)</div>
+                                <div class="text-gray-600">July 1, 2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-4 bg-green-50">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Golden Hawks</div>
+                                <div class="text-sm text-green-600 font-semibold">WIN</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">3-0 (25-21, 25-19, 25-17)</div>
+                                <div class="text-gray-600">June 24, 2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-4 bg-green-50">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-semibold text-blue-900">vs Iron Titans</div>
+                                <div class="text-sm text-green-600 font-semibold">WIN</div>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-gray-600">3-2 (25-23, 22-25, 25-21, 23-25, 15-12)</div>
+                                <div class="text-gray-600">June 17, 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Season Stats -->
+            <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
+                <h3 class="font-heading font-bold text-2xl text-blue-900 mb-6 text-center">Season Statistics</h3>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-orange-500 mb-2">18-2</div>
+                        <div class="text-gray-600">Win-Loss Record</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-orange-500 mb-2">90%</div>
+                        <div class="text-gray-600">Win Percentage</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-orange-500 mb-2">12</div>
+                        <div class="text-gray-600">Win Streak</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-orange-500 mb-2">#1</div>
+                        <div class="text-gray-600">League Ranking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section id="news" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    Latest <span class="text-gradient">News</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Stay updated with the latest team news, announcements, and behind-the-scenes content.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Featured News -->
+                <div class="lg:col-span-2">
+                    <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <img src="https://pixabay.com/get/geb5ab445e391fc9c110e8ea494b6bac44163c781014e4c7091f977e418f28b2743ac2ec46b1a49f5a23b51fbaec042db6f90e36388ea03b4e35f4886388cf3ce_1280.jpg" 
+                             alt="Championship Victory" 
+                             class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Championship</span>
+                                <span class="text-gray-500 text-sm">July 5, 2025</span>
+                            </div>
+                            <h3 class="font-heading font-bold text-2xl text-blue-900 mb-4">
+                                Thunder Volleyball Wins Global Championship
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                In a thrilling five-set match, Thunder Volleyball claimed the Global Championship title, defeating the defending champions in front of a packed arena. The victory marks the team's first international title and caps off an incredible season.
+                            </p>
+                            <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold flex items-center">
+                                Read More <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- News Sidebar -->
+                <div class="space-y-6">
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-semibold">Player News</span>
+                            <span class="text-gray-500 text-xs">July 3, 2025</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900 mb-2">
+                            Alexandra Chen Named MVP
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Team captain receives tournament's Most Valuable Player award.
+                        </p>
+                    </article>
+                    
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-semibold">Training</span>
+                            <span class="text-gray-500 text-xs">June 28, 2025</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900 mb-2">
+                            New Training Facility Opening
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            State-of-the-art performance center ready for next season.
+                        </p>
+                    </article>
+                    
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded text-xs font-semibold">Community</span>
+                            <span class="text-gray-500 text-xs">June 20, 2025</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900 mb-2">
+                            Youth Development Program
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            New initiative to train the next generation of volleyball stars.
+                        </p>
+                    </article>
+                    
+                    <!-- Newsletter Signup -->
+                    <div class="bg-gradient-primary text-white rounded-lg p-6">
+                        <h4 class="font-semibold text-lg mb-3">Stay Updated</h4>
+                        <p class="text-sm mb-4 opacity-90">
+                            Get the latest news and exclusive content delivered to your inbox.
+                        </p>
+                        <form class="space-y-3">
+                            <input type="email" placeholder="Enter your email" 
+                                   class="w-full px-3 py-2 rounded text-gray-900 placeholder-gray-500">
+                            <button type="submit" 
+                                    class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded font-semibold transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors & Partners -->
+    <section id="sponsors" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    Our <span class="text-gradient">Partners</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Proud to work with leading brands that support our mission of volleyball excellence.
+                </p>
+            </div>
+            
+            <!-- Main Sponsors -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                <h3 class="font-heading font-bold text-2xl text-blue-900 mb-8 text-center">Official Partners</h3>
+                <div class="grid md:grid-cols-4 gap-8 items-center">
+                    <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-20 h-20 bg-gradient-primary rounded-lg mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">SP</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900">SportPro</h4>
+                        <p class="text-gray-600 text-sm">Official Equipment</p>
+                    </div>
+                    
+                    <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-20 h-20 bg-orange-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">EN</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900">EnergyMax</h4>
+                        <p class="text-gray-600 text-sm">Nutrition Partner</p>
+                    </div>
+                    
+                    <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-20 h-20 bg-green-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">FT</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900">FitTrack</h4>
+                        <p class="text-gray-600 text-sm">Performance Analytics</p>
+                    </div>
+                    
+                    <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="w-20 h-20 bg-purple-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">MS</span>
+                        </div>
+                        <h4 class="font-semibold text-blue-900">MedSport</h4>
+                        <p class="text-gray-600 text-sm">Sports Medicine</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Supporting Sponsors -->
+            <div class="text-center">
+                <h3 class="font-heading font-bold text-xl text-blue-900 mb-8">Supporting Sponsors</h3>
+                <div class="grid md:grid-cols-6 gap-6 items-center opacity-70">
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand A</span>
+                    </div>
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand B</span>
+                    </div>
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand C</span>
+                    </div>
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand D</span>
+                    </div>
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand E</span>
+                    </div>
+                    <div class="bg-gray-200 h-16 rounded-lg flex items-center justify-center">
+                        <span class="font-semibold text-gray-600">Brand F</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team -->
+    <section id="join" class="py-20 bg-gradient-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl mb-6">
+                    Join Our <span class="text-orange-300">Championship Journey</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto opacity-90">
+                    Ready to train with champions? Discover opportunities to be part of Thunder Volleyball's winning tradition.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Tryouts -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="w-16 h-16 bg-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="target" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Player Tryouts</h3>
+                    <p class="mb-6 opacity-90">
+                        Elite players seeking to compete at the highest level. Tryouts held twice yearly for exceptional talent.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm opacity-90">
+                        <li>• Minimum 3 years competitive experience</li>
+                        <li>• Height requirement: 5'8" or above</li>
+                        <li>• Strong technical fundamentals</li>
+                        <li>• Commitment to excellence</li>
+                    </ul>
+                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Apply for Tryouts
+                    </button>
+                </div>
+                
+                <!-- Youth Program -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="w-16 h-16 bg-blue-400 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="users" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Youth Development</h3>
+                    <p class="mb-6 opacity-90">
+                        Training the next generation of volleyball champions through comprehensive development programs.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm opacity-90">
+                        <li>• Ages 12-18 welcome</li>
+                        <li>• Professional coaching staff</li>
+                        <li>• Progressive skill development</li>
+                        <li>• Competitive tournament play</li>
+                    </ul>
+                    <button class="w-full bg-blue-400 hover:bg-blue-500 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Join Youth Program
+                    </button>
+                </div>
+                
+                <!-- Volunteer -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="heart" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl mb-4">Volunteer</h3>
+                    <p class="mb-6 opacity-90">
+                        Support our team's mission and be part of our championship community through various volunteer opportunities.
+                    </p>
+                    <ul class="space-y-2 mb-6 text-sm opacity-90">
+                        <li>• Event organization</li>
+                        <li>• Match day assistance</li>
+                        <li>• Social media support</li>
+                        <li>• Community outreach</li>
+                    </ul>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                        Volunteer With Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
+                    Get In <span class="text-gradient">Touch</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Ready to join the Thunder Volleyball family? We'd love to hear from you.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="font-heading font-bold text-2xl text-blue-900 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                                <input type="text" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                       placeholder="Enter your first name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                                <input type="text" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                       placeholder="Enter your last name">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                            <input type="email" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                   placeholder="Enter your email">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                                <option>General Inquiry</option>
+                                <option>Player Tryouts</option>
+                                <option>Youth Program</option>
+                                <option>Sponsorship</option>
+                                <option>Media/Press</option>
+                                <option>Volunteer Opportunities</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                      placeholder="Tell us about your interest in Thunder Volleyball..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Contact Details -->
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h3 class="font-heading font-bold text-xl text-blue-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i data-feather="map-pin" class="w-5 h-5 text-orange-500 mt-1"></i>
+                                <div>
+                                    <div class="font-semibold text-blue-900">Training Facility</div>
+                                    <div class="text-gray-700">123 Champion Drive<br>Thunder City, TC 12345</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <i data-feather="phone" class="w-5 h-5 text-orange-500"></i>
+                                <div>
+                                    <div class="font-semibold text-blue-900">Phone</div>
+                                    <div class="text-gray-700">(555) 123-THUNDER</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <i data-feather="mail" class="w-5 h-5 text-orange-500"></i>
+                                <div>
+                                    <div class="font-semibold text-blue-900">Email</div>
+                                    <div class="text-gray-700">info@thundervolleyball.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="bg-gradient-primary text-white rounded-xl p-6">
+                        <h3 class="font-heading font-bold text-xl mb-6">Follow Our Journey</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#" class="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                                <i data-feather="instagram" class="w-5 h-5"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                                <i data-feather="twitter" class="w-5 h-5"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                                <i data-feather="facebook" class="w-5 h-5"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                                <i data-feather="youtube" class="w-5 h-5"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="bg-gray-200 rounded-xl h-64 flex items-center justify-center">
+                        <div class="text-center">
+                            <i data-feather="map" class="w-12 h-12 text-gray-400 mx-auto mb-2"></i>
+                            <p class="text-gray-600">Interactive Map</p>
+                            <p class="text-sm text-gray-500">Thunder Training Facility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo & Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M8 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <span class="font-heading font-bold text-xl">Thunder Volleyball</span>
+                    </div>
+                    <p class="text-blue-200 mb-6 max-w-md">
+                        Elite volleyball team dedicated to excellence, teamwork, and developing champions on and off the court.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="#about" class="hover:text-orange-300 transition-colors">About Team</a></li>
+                        <li><a href="#players" class="hover:text-orange-300 transition-colors">Our Players</a></li>
+                        <li><a href="#achievements" class="hover:text-orange-300 transition-colors">Achievements</a></li>
+                        <li><a href="#schedule" class="hover:text-orange-300 transition-colors">Schedule</a></li>
+                        <li><a href="#news" class="hover:text-orange-300 transition-colors">News</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <div class="space-y-2 text-blue-200 text-sm">
+                        <p>123 Champion Drive<br>Thunder City, TC 12345</p>
+                        <p>(555) 123-THUNDER</p>
+                        <p>info@thundervolleyball.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p class="text-blue-200">&copy; 2025 Thunder Volleyball. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
