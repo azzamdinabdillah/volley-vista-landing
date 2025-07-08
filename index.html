@@ -45,8 +45,12 @@
         <!-- Feather Icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         
-        <!-- Vanilla Infinite Marquee -->
-        <script src="https://unpkg.com/vanilla-infinite-marquee@1.0.0/dist/vanilla-infinite-marquee.js"></script>
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <!-- CountUp.js Library -->
+        <script src="https://unpkg.com/countup.js@2.8.0/dist/countUp.umd.js"></script>
 
         <style type="text/tailwindcss">
             @layer base {
@@ -243,12 +247,16 @@
                 class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
             >
                 <h1
-                    class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl mb-6 animate-fade-in-up"
+                    class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl mb-6"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
                 >
                     Champions Rise <span class="text-gradient">Together</span>
                 </h1>
                 <p
-                    class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-300"
+                    class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
                 >
                     Elite volleyball excellence meets international competitive
                     spirit. Join our championship journey.
@@ -464,7 +472,7 @@
         <!-- Players Showcase -->
         <section id="players" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16" data-aos="fade-up">
                     <h2
                         class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6"
                     >
@@ -1952,7 +1960,7 @@
         <!-- Sponsors & Partners -->
         <section id="sponsors" class="py-20 bg-gray-50 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6">
                         Our <span class="text-gradient">Partners</span>
                     </h2>
@@ -1962,7 +1970,7 @@
                 </div>
                 
                 <!-- Marquee Container -->
-                <div class="marquee-container overflow-hidden flex gap-16 py-3" id="sponsors-marquee">
+                <div class="marquee-container overflow-hidden flex gap-16 py-3" id="sponsors-marquee" data-aos="fade-up" data-aos-delay="200">
                     <div class="marquee-content flex items-center space-x-16">
                         <!-- Sponsor Logo 1 -->
                         <div class="flex-shrink-0 w-fit h-24 flex items-center justify-center bg-white rounded-lg shadow-md px-6">
