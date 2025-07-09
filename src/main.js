@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initMobileMenu();
     initSmoothScroll();
     initFormValidation();
-    setTimeout(initSponsorsMarquee, 100);
+
     initTouchGestures();
 });
 
@@ -451,43 +451,4 @@ document.addEventListener("DOMContentLoaded", function () {
     initLazyLoading();
 });
 
-// Sponsors marquee animation
-function initSponsorsMarquee() {
-    const marqueeContainer = document.getElementById("sponsors-marquee");
-    const marqueeContent = marqueeContainer.querySelector(".marquee-content");
 
-    if (!marqueeContainer || !marqueeContent) return;
-
-    // Clone the content for seamless loop
-    const clonedContent = marqueeContent.cloneNode(true);
-    marqueeContainer.appendChild(clonedContent);
-
-    // Add CSS animation
-    const style = document.createElement("style");
-    style.textContent = `
-        .marquee-container {
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .marquee-content {
-            display: inline-flex;
-            animation: marquee 30s linear infinite;
-        }
-        
-        @keyframes marquee {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        
-        .marquee-container:hover .marquee-content {
-            animation-play-state: paused;
-        }
-    `;
-    document.head.appendChild(style);
-}

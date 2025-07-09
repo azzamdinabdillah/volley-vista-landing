@@ -105,6 +105,68 @@
   background: #475569;
 }
 
+/* Sponsor card animations */
+.sponsor-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.sponsor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.sponsor-card:hover::before {
+  left: 100%;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Enhanced marquee animation */
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Sponsor card gradient borders */
+.sponsor-card {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #3b82f6, #f97316) border-box;
+  border: 2px solid transparent;
+}
+
+.sponsor-card:hover {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #1d4ed8, #ea580c) border-box;
+}
+
 /* Smooth transitions for all interactive elements */
 * {
   transition-property: all;
