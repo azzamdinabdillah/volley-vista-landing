@@ -73,6 +73,7 @@ function initMobileMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
     const menuIcon = mobileMenuBtn.querySelector('[data-feather="menu"]');
     const closeIcon = mobileMenuBtn.querySelector('[data-feather="x"]');
+    const navbar = document.getElementById("navbar");
 
     mobileMenuBtn.addEventListener("click", () => {
         const isOpen = mobileMenu.classList.contains("hidden");
@@ -81,10 +82,15 @@ function initMobileMenu() {
             mobileMenu.classList.remove("hidden");
             mobileMenuBtn.innerHTML =
                 '<i data-feather="x" class="w-6 h-6"></i>';
+            navbar.classList.add("navbar-scrolled");
         } else {
             mobileMenu.classList.add("hidden");
             mobileMenuBtn.innerHTML =
                 '<i data-feather="menu" class="w-6 h-6"></i>';
+
+            if (!navbar.classList.contains('navbar-scrolled')) {
+                navbar.classList.remove("navbar-scrolled");
+            }
         }
 
         feather.replace();
