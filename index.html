@@ -120,16 +120,37 @@
                     }
                 }
             }
+            /* Navbar scrolled state */
+            .navbar-scrolled {
+                @apply bg-white/95 backdrop-blur-sm border-gray-200;
+            }
+
+            .navbar-scrolled .font-heading {
+                @apply text-blue-900;
+            }
+            
+            /* Navbar scrolled state - text colors */
+            .navbar-scrolled .nav-link {
+                @apply text-gray-700 hover:text-blue-900;
+            }
+            
+            .navbar-scrolled #mobile-menu-btn {
+                @apply text-gray-700;
+            }
+            
+            .navbar-scrolled .font-heading {
+                @apply text-blue-900;
+            }
         </style>
     </head>
     <body class="bg-white text-gray-900 overflow-x-hidden">
         <!-- Navigation -->
         <nav
-            class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300"
+            class="fixed top-0 w-full bg-transparent border-b border-transparent z-50 transition-all duration-300"
             id="navbar"
         >
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-16">
+                <div class="flex justify-between items-center h-16 lg:h-20">
                     <!-- Logo -->
                     <div class="flex items-center space-x-2">
                         <div
@@ -152,7 +173,7 @@
                             </svg>
                         </div>
                         <span
-                            class="font-heading font-bold text-xl text-blue-900"
+                            class="font-heading font-bold text-xl text-white"
                             >Thunder VB</span
                         >
                     </div>
@@ -161,37 +182,37 @@
                     <div class="hidden lg:flex items-center space-x-8">
                         <a
                             href="#home"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Home</a
                         >
                         <a
                             href="#about"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >About</a
                         >
                         <a
                             href="#players"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Players</a
                         >
                         <a
                             href="#achievements"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Achievements</a
                         >
                         <a
                             href="#schedule"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Schedule</a
                         >
                         <a
                             href="#sponsors"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Partners</a
                         >
                         <a
                             href="#contact"
-                            class="nav-link text-gray-700 hover:text-blue-900 transition-colors"
+                            class="nav-link text-white hover:text-orange-300 transition-colors"
                             >Contact</a
                         >
                         <button
@@ -202,7 +223,7 @@
                     </div>
 
                     <!-- Mobile Menu Button -->
-                    <button class="lg:hidden p-2" id="mobile-menu-btn">
+                    <button class="lg:hidden p-2 text-white" id="mobile-menu-btn">
                         <i data-feather="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -289,7 +310,7 @@
                 class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
             >
                 <h1
-                    class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl mb-6"
+                    class="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl mt-10 md:mt-0 mb-6"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                 >
@@ -377,7 +398,11 @@
             <div
                 class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
             >
-                <i data-feather="chevron-down" class="w-8 h-8 text-white"></i>
+                <!-- Mouse SVG Icon -->
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="7" y="2" width="10" height="20" rx="5" stroke="currentColor" fill="none"/>
+                    <line x1="12" y1="6" x2="12" y2="12" stroke="currentColor"/>
+                </svg>
             </div>
         </section>
 
@@ -1143,7 +1168,7 @@
                                         class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center"
                                     >
                                         <i
-                                            data-feather="brain"
+                                            data-feather="activity"
                                             class="w-4 h-4 text-white"
                                         ></i>
                                     </div>
@@ -1174,7 +1199,7 @@
                                 Training Schedule
                             </h4>
                             <div class="space-y-3 text-sm">
-                                <div class="flex justify-between">
+                                <div class="flex justify-between flex-col gap-2 md:flex-row">
                                     <span class="text-gray-600"
                                         >Monday - Wednesday</span
                                     >
@@ -1182,7 +1207,7 @@
                                         >Technical Skills</span
                                     >
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between flex-col gap-2 md:flex-row">
                                     <span class="text-gray-600"
                                         >Tuesday - Thursday</span
                                     >
@@ -1190,7 +1215,7 @@
                                         >Strength Training</span
                                     >
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between flex-col gap-2 md:flex-row">
                                     <span class="text-gray-600"
                                         >Wednesday - Friday</span
                                     >
@@ -1198,13 +1223,13 @@
                                         >Team Practice</span
                                     >
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between flex-col gap-2 md:flex-row">
                                     <span class="text-gray-600">Friday</span>
                                     <span class="font-semibold"
                                         >Match Simulation</span
                                     >
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex justify-between flex-col gap-2 md:flex-row">
                                     <span class="text-gray-600">Saturday</span>
                                     <span class="font-semibold"
                                         >Recovery & Analysis</span
@@ -1232,7 +1257,7 @@
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-8">
+                <div class="grid md:grid-cols-2 gap-8">
                     <!-- Upcoming Matches -->
                     <div class="bg-white rounded-xl shadow-lg p-6">
                         <h3
@@ -1480,7 +1505,7 @@
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-3 gap-8 relative items-start">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative items-start">
                     <!-- Featured News -->
                     <div class="lg:col-span-2 lg:sticky top-20">
                         <article
@@ -1616,156 +1641,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Sponsors & Partners -->
-        <!-- <section id="sponsors" class="py-20 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2
-                        class="font-heading font-bold text-4xl sm:text-5xl text-blue-900 mb-6"
-                    >
-                        Our <span class="text-gradient">Partners</span>
-                    </h2>
-                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Proud to work with leading brands that support our
-                        mission of volleyball excellence.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h3
-                        class="font-heading font-bold text-2xl text-blue-900 mb-8 text-center"
-                    >
-                        Official Partners
-                    </h3>
-                    <div class="grid md:grid-cols-4 gap-8 items-center">
-                        <div
-                            class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors"
-                        >
-                            <div
-                                class="w-20 h-20 bg-gradient-primary rounded-lg mx-auto mb-4 flex items-center justify-center"
-                            >
-                                <span class="text-white font-bold text-lg"
-                                    >SP</span
-                                >
-                            </div>
-                            <h4 class="font-semibold text-blue-900">
-                                SportPro
-                            </h4>
-                            <p class="text-gray-600 text-sm">
-                                Official Equipment
-                            </p>
-                        </div>
-
-                        <div
-                            class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors"
-                        >
-                            <div
-                                class="w-20 h-20 bg-orange-500 rounded-lg mx-auto mb-4 flex items-center justify-center"
-                            >
-                                <span class="text-white font-bold text-lg"
-                                    >EN</span
-                                >
-                            </div>
-                            <h4 class="font-semibold text-blue-900">
-                                EnergyMax
-                            </h4>
-                            <p class="text-gray-600 text-sm">
-                                Nutrition Partner
-                            </p>
-                        </div>
-
-                        <div
-                            class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors"
-                        >
-                            <div
-                                class="w-20 h-20 bg-green-500 rounded-lg mx-auto mb-4 flex items-center justify-center"
-                            >
-                                <span class="text-white font-bold text-lg"
-                                    >FT</span
-                                >
-                            </div>
-                            <h4 class="font-semibold text-blue-900">
-                                FitTrack
-                            </h4>
-                            <p class="text-gray-600 text-sm">
-                                Performance Analytics
-                            </p>
-                        </div>
-
-                        <div
-                            class="text-center p-6 hover:bg-gray-50 rounded-lg transition-colors"
-                        >
-                            <div
-                                class="w-20 h-20 bg-purple-500 rounded-lg mx-auto mb-4 flex items-center justify-center"
-                            >
-                                <span class="text-white font-bold text-lg"
-                                    >MS</span
-                                >
-                            </div>
-                            <h4 class="font-semibold text-blue-900">
-                                MedSport
-                            </h4>
-                            <p class="text-gray-600 text-sm">Sports Medicine</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <h3
-                        class="font-heading font-bold text-xl text-blue-900 mb-8"
-                    >
-                        Supporting Sponsors
-                    </h3>
-                    <div
-                        class="grid md:grid-cols-6 gap-6 items-center opacity-70"
-                    >
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand A</span
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand B</span
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand C</span
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand D</span
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand E</span
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 h-16 rounded-lg flex items-center justify-center"
-                        >
-                            <span class="font-semibold text-gray-600"
-                                >Brand F</span
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- Join Our Team -->
         <section id="join" class="py-20 bg-gradient-primary text-white">
@@ -1903,7 +1778,7 @@
                 <div class="relative" data-aos="fade-up" data-aos-delay="400">
                     
                     <!-- Sponsors Grid -->
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         <!-- Sponsor 1 -->
                         <div class="group cursor-pointer">
                             <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-blue-200 overflow-hidden">
@@ -2110,9 +1985,9 @@
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-12 items-start relative">
+                <div class="grid md:grid-cols-2 gap-12 items-start relative">
                     <!-- Contact Form -->
-                    <div class="bg-gray-50 rounded-xl p-8 sticky top-20">
+                    <div class="bg-gray-50 rounded-xl p-8 lg:sticky top-20">
                         <h3
                             class="font-heading font-bold text-2xl text-blue-900 mb-6"
                         >
@@ -2197,60 +2072,45 @@
                     <!-- Contact Information -->
                     <div class="space-y-8">
                         <!-- Contact Details -->
-                        <div class="bg-blue-50 rounded-xl p-6">
-                            <h3
-                                class="font-heading font-bold text-xl text-blue-900 mb-6"
-                            >
+                        <div class="bg-gradient-to-br from-blue-50 via-blue-100 to-orange-50 rounded-2xl p-8 shadow-lg border border-blue-100">
+                            <h3 class="font-heading font-bold text-2xl text-blue-900 mb-8 flex items-center gap-2">
+                                <i data-feather="info" class="w-6 h-6 hidden md:block text-orange-500"></i>
                                 Contact Information
                             </h3>
-                            <div class="space-y-4">
-                                <div class="flex items-start space-x-3">
-                                    <i
-                                        data-feather="map-pin"
-                                        class="w-5 h-5 text-orange-500 mt-1"
-                                    ></i>
+                            <div class="space-y-6">
+                                <!-- Address -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-orange-100 rounded-full p-3 flex items-center justify-center shadow-sm">
+                                        <i data-feather="map-pin" class="w-6 h-6 text-orange-500"></i>
+                                    </div>
                                     <div>
-                                        <div
-                                            class="font-semibold text-blue-900"
-                                        >
-                                            Training Facility
-                                        </div>
-                                        <div class="text-gray-700">
-                                            123 Champion Drive<br />Thunder
-                                            City, TC 12345
+                                        <div class="font-semibold text-blue-900 text-lg">Training Facility</div>
+                                        <div class="text-blue-800/80 text-sm mt-1">
+                                            123 Champion Drive<br />
+                                            Thunder City, TC 12345
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="flex items-center space-x-3">
-                                    <i
-                                        data-feather="phone"
-                                        class="w-5 h-5 text-orange-500"
-                                    ></i>
+                                <!-- Phone -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 flex items-center justify-center shadow-sm">
+                                        <i data-feather="phone" class="w-6 h-6 text-blue-600"></i>
+                                    </div>
                                     <div>
-                                        <div
-                                            class="font-semibold text-blue-900"
-                                        >
-                                            Phone
-                                        </div>
-                                        <div class="text-gray-700">
+                                        <div class="font-semibold text-blue-900 text-lg">Phone</div>
+                                        <div class="text-blue-800/80 text-sm mt-1">
                                             (555) 123-THUNDER
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="flex items-center space-x-3">
-                                    <i
-                                        data-feather="mail"
-                                        class="w-5 h-5 text-orange-500"
-                                    ></i>
+                                <!-- Email -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-orange-100 rounded-full p-3 flex items-center justify-center shadow-sm">
+                                        <i data-feather="mail" class="w-6 h-6 text-orange-500"></i>
+                                    </div>
                                     <div>
-                                        <div
-                                            class="font-semibold text-blue-900"
-                                        >
-                                            Email
-                                        </div>
-                                        <div class="text-gray-700">
+                                        <div class="font-semibold text-blue-900 text-lg">Email</div>
+                                        <div class="text-blue-800/80 text-sm mt-1 break-all">
                                             info@thundervolleyball.com
                                         </div>
                                     </div>
@@ -2319,7 +2179,7 @@
         <!-- Floating WhatsApp Button -->
         <div class="fixed bottom-6 right-6 z-50 animate-bounce">
             <a 
-                href="https://wa.me/6281234567890?text=Hi%20Thunder%20Volleyball!%20I'm%20interested%20in%20joining%20your%20team." 
+                href="https://wa.me/62895351448889?text=Hi%20Thunder%20Volleyball!%20I'm%20interested%20in%20joining%20your%20team." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 border-2 border-white/20 hover:border-white/40"
