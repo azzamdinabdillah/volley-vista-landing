@@ -27,8 +27,8 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            type="image/svg+xml"
-            href="/src/assets/icons.svg#volleyball"
+            type="image/png"
+            href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d0.png"
         />
 
         <!-- Fonts -->
@@ -38,9 +38,6 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
-
-        <!-- TailwindCSS -->
-        <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- Feather Icons -->
         <script src="https://unpkg.com/feather-icons"></script>
@@ -52,96 +49,7 @@
         <!-- CountUp.js Library -->
         <script src="https://unpkg.com/countup.js@2.8.0/dist/countUp.umd.js"></script>
 
-        <style type="text/tailwindcss">
-            @layer base {
-                body {
-                    font-family: "Inter", sans-serif;
-                }
-                .font-heading {
-                    font-family: "Poppins", sans-serif;
-                }
-                .font-accent {
-                    font-family: "Montserrat", sans-serif;
-                }
-            }
-
-            @layer utilities {
-                .bg-gradient-primary {
-                    background: linear-gradient(
-                        135deg,
-                        #1e3a8a 0%,
-                        #3b82f6 100%
-                    );
-                }
-                .bg-gradient-hero {
-                    background: linear-gradient(
-                        rgba(30, 58, 138, 0.8),
-                        rgba(59, 130, 246, 0.6)
-                    );
-                }
-                .text-gradient {
-                    background: linear-gradient(135deg, #f97316, #fb923c);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                }
-                
-
-                
-                /* Sponsor card hover effects */
-                .sponsor-card-hover {
-                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                }
-                
-                .sponsor-card-hover:hover {
-                    transform: translateY(-8px) scale(1.02);
-                    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-                }
-                
-                /* Gradient text effects */
-                .gradient-text {
-                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                }
-                
-                /* Floating animation */
-                .animate-float {
-                    animation: float 6s ease-in-out infinite;
-                }
-                
-                @keyframes float {
-                    0%, 100% {
-                        transform: translateY(0px);
-                    }
-                    50% {
-                        transform: translateY(-10px);
-                    }
-                }
-            }
-            /* Navbar scrolled state */
-            .navbar-scrolled {
-                @apply bg-white/95 backdrop-blur-sm border-gray-200;
-            }
-
-            .navbar-scrolled .font-heading {
-                @apply text-blue-900;
-            }
-            
-            /* Navbar scrolled state - text colors */
-            .navbar-scrolled .nav-link {
-                @apply text-gray-700 hover:text-blue-900;
-            }
-            
-            .navbar-scrolled #mobile-menu-btn {
-                @apply text-gray-700;
-            }
-            
-            .navbar-scrolled .font-heading {
-                @apply text-blue-900;
-            }
-        </style>
+        <link rel="stylesheet" href="./src/style.css">
     </head>
     <body class="bg-white text-gray-900 overflow-x-hidden">
         <!-- Navigation -->
