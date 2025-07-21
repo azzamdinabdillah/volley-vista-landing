@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thunder Volleyball Website - Setup & Guide</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #e0e7ff;
+      --accent: #38bdf8;
+      --bg: #f7fafc;
+      --card-bg: #fff;
+      --border: #e5e7eb;
+      --text: #222;
+      --muted: #64748b;
+      --tip-bg: #e0f2fe;
+      --tip-border: #38bdf8;
+      --warn-bg: #fee2e2;
+      --warn-border: #ef4444;
+    }
+    html {
+      font-size: 18px;
+    }
+    body {
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 720px;
+      margin: 48px auto 32px auto;
+      background: var(--card-bg);
+      border-radius: 18px;
+      box-shadow: 0 4px 32px #0001;
+      padding: 40px 28px 32px 28px;
+    }
+    h1 {
+      color: var(--primary);
+      font-size: 2.3rem;
+      margin-bottom: 0.2em;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      color: var(--muted);
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2.2em;
+    }
+    .toc {
+      position: sticky;
+      top: 0;
+      background: var(--card-bg);
+      z-index: 10;
+      padding: 18px 0 10px 0;
+      margin-bottom: 2em;
+      border-bottom: 1px solid var(--border);
+    }
+    .toc ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .toc a:hover {
+      background: var(--primary-light);
+    }
+    section {
+      margin-bottom: 2.5em;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: 0 2px 12px #0001;
+      border: 1px solid var(--border);
+      padding: 28px 22px 22px 22px;
+      margin-bottom: 1.5em;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.35rem;
+      margin-top: 0;
+      margin-bottom: 0.7em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 1.1rem;
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    code, pre {
+      background: #f1f5f9;
+      color: #0f172a;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    pre {
+      display: block;
+      padding: 14px;
+      margin: 14px 0 18px 0;
+      overflow-x: auto;
+      font-size: 1em;
+    }
+    ol, ul {
+      margin-left: 1.5em;
+      margin-bottom: 1em;
+    }
+    .tip {
+      background: var(--tip-bg);
+      border-left: 4px solid var(--tip-border);
+      padding: 12px 18px;
+      margin: 18px 0;
+      border-radius: 7px;
+      color: #0369a1;
+      font-size: 1em;
+    }
+    .warning {
+      background: var(--warn-bg);
+      border-left: 4px solid var(--warn-border);
+      padding: 12px 18px;
+      margin: 18px 0;
+      border-radius: 7px;
+      color: #991b1b;
+      font-size: 1em;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+    .faq {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 18px 18px 12px 18px;
+      margin: 20px 0 0 0;
+      border: 1px solid var(--border);
+      font-size: 1em;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 1em;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 18px 2vw 18px 2vw; }
+      .card { padding: 16px 6px 14px 10px; }
+      h1 { font-size: 1.3rem; }
+      h2 { font-size: 1.1rem; }
+      .toc ul { gap: 8px; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Thunder Volleyball Website<br>Setup & Modification Guide</h1>
+    <div class="subtitle">A step-by-step guide for beginners to install, run, and edit your website easily.</div>
+    <nav class="toc" aria-label="Table of Contents">
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#run">Run</a></li>
+        <li><a href="#structure">Folders</a></li>
+        <li><a href="#edit">Edit</a></li>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#help">Help</a></li>
+      </ul>
+    </nav>
+
+    <section id="requirements" class="card">
+      <h2>1. Requirements</h2>
+      <ol>
+        <li>
+          <b>Install these first:</b>
+          <ul>
+            <li><b>Node.js</b> (version 16 or newer). Download from <a href="https://nodejs.org/" target="_blank">nodejs.org</a></li>
+            <li><b>Code Editor</b> (recommended: <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>)</li>
+          </ul>
+        </li>
+        <li>
+          <b>Extract</b> the project files to a folder on your computer (for example: <code>C:/Users/YourName/Documents/volley-vista-landing</code>).
+        </li>
+      </ol>
+    </section>
+
+    <section id="install" class="card">
+      <h2>2. How to Install</h2>
+      <ol>
+        <li>Open the project folder on your computer.</li>
+        <li>Open a terminal/command prompt in that folder.<br>
+          <span style="font-size:0.97em;">(Tip: In Windows, right-click in the folder &gt; choose <b>Open in Terminal</b> or <b>Open in Command Prompt</b>.)</span>
+        </li>
+        <li>Type this command and press <b>Enter</b>:
+          <pre>npm install</pre>
+          <div class="tip">This will automatically download all the website's requirements (libraries).</div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="run" class="card">
+      <h2>3. Run the Website (Development Mode)</h2>
+      <ol>
+        <li>After <b>npm install</b> is finished, run:
+          <pre>npm run dev</pre>
+          <div class="tip">The website will start in development mode. You will see an address like <code>http://localhost:5173</code> in the terminal. Click or copy-paste it into your browser.</div>
+        </li>
+        <li>The website is now live and ready to edit. Any file changes will update automatically in your browser.</li>
+      </ol>
+    </section>
+
+    <section id="structure" class="card">
+      <h2>4. Important Folder Structure</h2>
+      <ul>
+        <li><b>index.html</b>: The main website page.</li>
+        <li><b>src/style.css</b>: Controls the website's appearance (colors, fonts, layout).</li>
+        <li><b>src/main.js</b>: Main JavaScript for animations/interactions.</li>
+        <li><b>public/</b>: Contains images used on the website.</li>
+        <li><b>src/assets/</b>: Contains icons or extra assets.</li>
+      </ul>
+    </section>
+
+    <section id="edit" class="card">
+      <h2>5. How to Edit the Website</h2>
+      <ol>
+        <li>
+          <b>Edit Text/Content:</b><br>
+          Open <b>index.html</b> in your code editor. Find and change the text you want (title, description, player names, schedule, etc).
+        </li>
+        <li>
+          <b>Change Images:</b><br>
+          <ul>
+            <li>Put your new image in the <b>public/</b> folder.</li>
+            <li>Edit <b>index.html</b> and change the <code>src="..."</code> in the <code>&lt;img&gt;</code> tag to your image file name.</li>
+          </ul>
+        </li>
+        <li>
+          <b>Edit Colors/Styles:</b><br>
+          Open <b>src/style.css</b>. You can change colors, fonts, sizes, etc.<br>
+          <div class="tip">For color and style references, see <a href="https://tailwindcss.com/docs/customizing-colors" target="_blank">Tailwind CSS documentation</a>.</div>
+        </li>
+        <li>
+          <b>Edit Animations/Interactions:</b><br>
+          Open <b>src/main.js</b> to change animation effects, menus, etc.
+        </li>
+      </ol>
+    </section>
+
+    <section id="build" class="card">
+      <h2>6. Build/Export for Hosting</h2>
+      <ol>
+        <li>When you are done editing, run:
+          <pre>npm run build</pre>
+          <div class="tip">A new folder called <b>dist</b> will appear. This contains the website files ready to upload to your hosting.</div>
+        </li>
+        <li>Upload the contents of the <b>dist</b> folder to your hosting (for example: cPanel, Netlify, Vercel, etc).</li>
+      </ol>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>7. FAQ (Frequently Asked Questions)</h2>
+      <div class="faq">
+        <b>Q:</b> I have no coding experience. Can I use this website?<br>
+        <b>A:</b> Yes! Just follow this guide step by step. For simple edits (text/images), you do not need to know coding.
+      </div>
+      <div class="faq">
+        <b>Q:</b> What if the website breaks after I edit it?<br>
+        <b>A:</b> Check your changes. If needed, restore the original file (always make a backup before editing!).
+      </div>
+      <div class="faq">
+        <b>Q:</b> How do I add a new player or schedule item?<br>
+        <b>A:</b> Edit <b>index.html</b>, copy-paste a player/schedule block, and change the details as needed.
+      </div>
+      <div class="faq">
+        <b>Q:</b> Can I get help if I am stuck?<br>
+        <b>A:</b> Of course! Contact the website seller/developer for further assistance.
+      </div>
+    </section>
+
+    <section id="help" class="card">
+      <h2>8. Need Help?</h2>
+      <p>If you have any trouble, please contact the website seller/developer for more guidance.</p>
+      <div class="tip">
+        <b>Tip:</b> Always make a backup before making big changes!
+      </div>
+      <div class="warning">
+        <b>Warning:</b> Do not delete important files like <b>package.json</b>, <b>vite.config.js</b>, <b>tailwind.config.js</b>, or the <b>src/</b> folder.
+      </div>
+    </section>
+
+    <div class="footer">&copy; 2025 Thunder Volleyball Team Website Guide</div>
+  </div>
+</body>
+</html> 
